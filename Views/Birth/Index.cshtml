@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Lekcja_2_ASP_NET_WSEI_2023.Models.Birth
+@{
+    ViewData["Title"] = "Birthday Greeting";
+}
+
+<h2>Birthday Greeting</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <p>@ViewBag.Message</p>
+}
+
+<form asp-controller="Birth" asp-action="Index" method="post">
+    <div class="form-group">
+        <label for="Name">Imię</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="DateOfBirth">Data urodzenia</label>
+        <input asp-for="DateOfBirth" type="date" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Wyślij</button>
+</form>
+
+
+
+
+
+

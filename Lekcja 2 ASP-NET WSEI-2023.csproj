@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Lekcja_2_ASP_NET_WSEI_2023</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Calculator\**" />
+    <Content Remove="Views\Calculator\**" />
+    <EmbeddedResource Remove="Views\Calculator\**" />
+    <None Remove="Views\Calculator\**" />
+  </ItemGroup>
+
+</Project>
